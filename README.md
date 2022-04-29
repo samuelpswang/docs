@@ -1,11 +1,9 @@
 # Cheat Sheets (in Markdown)
 
-Status Symbols:
-
-- 🟡: Work In Progress
-- 🔴: On Hold |
-
----
+| Symbol | Status |
+| --- | --- |
+| 🟡 | Work In Progress |
+| 🔴 | On Hold |
 
 ## Table of Contents
 

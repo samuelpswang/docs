@@ -2,8 +2,6 @@
 
 TODO:
 
----
-
 ## MATLAB Interface (R2022a)
 
 ### Command Window
@@ -13,8 +11,6 @@ TODO:
 ### Editor
 
 TODO:
-
----
 
 ## Language Basics
 
@@ -32,6 +28,7 @@ TODO:
     It spans two lines.
     }%
     ```
+
 - Breaking Lines
   - `<code> ... <code>`
 
@@ -129,8 +126,6 @@ TODO:
     - Specify number of digits before and after decimal point with `#.#`. For example: `%4.4f`.
     - Specify printing plus or minus signs with `+`. For example: `%+.2f`.
 
----
-
 ## Math
 
 ### Constants
@@ -176,8 +171,6 @@ TODO:
 - Arc
   - Arcsine, Arccosine, Arctangent
 
----
-
 ## Matrices (Arrays)
 
 ### Declaration
@@ -213,13 +206,9 @@ TODO:
 
 TODO:
 
----
-
 ## Data Visualization
 
 ### Scatter Plots
-
----
 
 ## References
 
