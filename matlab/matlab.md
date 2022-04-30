@@ -6,11 +6,11 @@ TODO:
 
 ### Command Window
 
-TODO:
+![Command Window Screenshot](./img/command-window.png)
 
 ### Editor
 
-TODO:
+![Editor Window Screenshot](./img/editor.png)
 
 ## Language Basics
 
@@ -24,8 +24,10 @@ TODO:
     % This is a comment in MATLAB.
 
     %{
+
     This is a multi-line comment.
     It spans two lines.
+    
     }%
     ```
 
