@@ -1,18 +1,26 @@
 # Cheat Sheets (in Markdown)
 
-| Symbol | Status |
-| --- | --- |
-| 🟡 | Work In Progress |
-| 🔴 | On Hold |
+- [Cheat Sheets (in Markdown)](#cheat-sheets-in-markdown)
+  - [Introduction](#introduction)
+  - [Sheets List](#sheets-list)
+  - [Addendum](#addendum)
 
-## Table of Contents
+## Introduction
 
-### Programming Languages
+## Sheets List
 
-- [MATLAB](https://github.com/samuelpswang/cheat-sheets-in-markdown/blob/main/matlab/matlab.md) (🟡)
+- Markup
+  - [2️⃣] LaTeX
+  - [3️⃣] LaTeX (EEE Packages)
+  - [1️⃣] Markdown
 
-### Markup Languages
+- Programming
+  - [🚧] [MATLAB](https://github.com/samuelpswang/cheat-sheets-in-markdown/blob/main/matlab/matlab.md)
 
-- LaTeX (🔴)
-- LaTeX (EEE Packages) (🔴)
-- Markdown (🔴)
+## Addendum
+
+- Symbols Table
+  | Symbol | Status |
+  | --- | --- |
+  | 🚧 | Work In Progress |
+  | 0️⃣ | On Hold #0 |
