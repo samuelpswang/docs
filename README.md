@@ -1,13 +1,14 @@
-# Cheat Sheets
+# Cheat Sheets (Docs)
 
-- [Cheat Sheets](#cheat-sheets)
+- [Cheat Sheets (Docs)](#cheat-sheets-docs)
   - [Introduction](#introduction)
   - [Sheets List](#sheets-list)
     - [Markup Languages](#markup-languages)
     - [Programming Languages](#programming-languages)
-  - [Addendum](#addendum)
 
 ## Introduction
+
+:?:
 
 ## Sheets List
 
@@ -24,11 +25,3 @@
 
 - [ ] MATLAB
   - [ ] [Basic MATLAB](./matlab/matlab.md)
-
-## Addendum
-
-- Symbols Table
-  | Symbol | Status |
-  | --- | --- |
-  | 🚧 | Work In Progress |
-  | #0 | On Hold #0 |
