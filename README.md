@@ -3,19 +3,27 @@
 - [Cheat Sheets](#cheat-sheets)
   - [Introduction](#introduction)
   - [Sheets List](#sheets-list)
+    - [Markup Languages](#markup-languages)
+    - [Programming Languages](#programming-languages)
   - [Addendum](#addendum)
 
 ## Introduction
 
 ## Sheets List
 
-- Markup
-  - [#1] LaTeX
-  - [#2] LaTeX (EEE Packages)
-  - [Markdown](./markdown/markdown.md)
+### Markup Languages
 
-- Programming
-  - [🚧] [MATLAB](./matlab/matlab.md)
+- [ ] LaTeX
+  - [ ] Basic LaTeX
+  - [ ] EEE-Specific Packages
+- [ ] Markdown
+  - [x] [Basic Markdown](./markdown/markdown.md)
+  - [ ] Mermaid Diagram Library
+
+### Programming Languages
+
+- [ ] MATLAB
+  - [ ] [Basic MATLAB](./matlab/matlab.md)
 
 ## Addendum
 
