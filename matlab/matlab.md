@@ -1,94 +1,134 @@
 # MATLAB Cheat Sheat
 
-TODO:
+- [MATLAB Cheat Sheat](#matlab-cheat-sheat)
+  - [MATLAB Interface (R2022a)](#matlab-interface-r2022a)
+    - [FAQ](#faq)
+    - [Windows](#windows)
+  - [Useful Commands](#useful-commands)
+    - [Clearing History](#clearing-history)
+  - [Language Basics](#language-basics)
+    - [Comments/Breaking Lines](#commentsbreaking-lines)
+    - [Types](#types)
+    - [Conditionals](#conditionals)
+    - [Loops](#loops)
+    - [Print TODO:](#print-todo)
+  - [Math](#math)
+    - [Constants](#constants)
+    - [Complex Numbers](#complex-numbers)
+    - [Trigonometry Functions](#trigonometry-functions)
+  - [Matrix/Array](#matrixarray)
+    - [Declaration](#declaration)
+    - [Basic Operation](#basic-operation)
+  - [Data Visualization](#data-visualization)
+    - [Scatter Plots](#scatter-plots)
+  - [References](#references)
 
 ## MATLAB Interface (R2022a)
 
-### Command Window
+### FAQ
 
-![Command Window Screenshot](./img/command-window.png)
+| Questions | Answers |
+| --- | --- |
+| How do I reset the interface to default layout? | Go to Command Window > Home > Layout > Default Layout |
 
-### Editor
+### Windows
 
-![Editor Window Screenshot](./img/editor.png)
+| Startup |
+| --- |
+| ![Startup Window Screenshot](img/start-up.png) |
+
+| Command Window |
+| --- |
+| ![Command Window Screenshot](./img/command-window.png) |
+
+| Editor|
+| --- |
+| ![Editor Screenshot](./img/editor.png) |
+
+## Useful Commands
+
+### Clearing History
+
+| Item | Command |
+| --- | --- |
+| Clear All Variables | `clear all` |
+| Clear Command Window | `clc` |
+| Close All Windows | `close all` |
 
 ## Language Basics
 
-### Syntax
+### Comments/Breaking Lines
 
-- Comments
-  - Single-line: `% <comment>`
-  - Multi-line: `%{ <comment> %}`
+| Item | Syntax |
+| --- | --- |
+| Single-line Comment | `% comment` |
+| Multi-line Comment | `%{ comment %}` |
+| Break Line | `code ... code` |
 
-    ```matlab
-    % This is a comment in MATLAB.
+```matlab
+% This is a single-line comment in MATLAB.
 
-    %{
+%{
+This is a multi-line comment. 
+It spans two lines.
+%}
 
-    This is a multi-line comment.
-    It spans two lines.
-    
-    }%
-    ```
-
-- Breaking Lines
-  - `<code> ... <code>`
-
-    ```matlab
-    x = x + ...
+% Break Line
+x = x + ...
         123 - 456 * 789;
-    ```
-
-- Naming Convention
-  - Name variables in lower snake case.
-
-    ```matlab
-    lower_snake_case
-    ```
+```
 
 ### Types
 
-- Numbers
-- Booleans
-- Char, Char Arrays, Strings
+| Item |
+| --- |
+| Numbers |
+| Booleans |
+| Char, Char Arrays, Strings |
 
 ### Conditionals
 
-- If, ElseIf, Else
-  - `if <condition>` ... `elseif <condition>` ... `else` ... `end`
+| Item | Syntax |
+| --- | --- |
+| If, ElseIf, Else | `if condition` ... `elseif condition` ... `else` ... `end`|
 
-    ```matlab
-    if x = 1
-      disp('x = 1');
-    elseif x = 2
-      disp('x = 2');
-    else
-      disp('x != 1 && x != 2');
-    end
-    ```
+```matlab
+% If, Elseif, Else
+if x = 1
+  disp('x = 1');
+elseif x = 2
+  disp('x = 2');
+else
+  disp('x != 1 && x != 2');
+end
+```
 
 ### Loops
 
-- For Loop
-  - `for <variable> = <start>:<end>` ... `end` (automatically asuume increment is 1)
-  - `for <variable> = <start>:<increment>:<end>` ... `<end>` (increment specified)
+| Item | Syntax |
+| --- | --- |
+| For Loop (Increment=1) | `for variable = start:end` ... `end` |
+| For Loop (Increment!=1) | `for variable = start:increment:end` ... `end` |
+| While Loop | `while condition` ... `end` |
 
-    ```matlab
-    for index = 5:-1:1
-        disp(index);
-    end
-    ```
+```matlab
+% For (Increment=1)
+for index = 1:3
+    disp(index);
+end
 
-- While Loop
-  - `while <condition>` ... `end`
+% For (Increment!=1)
+for index = 5:-1:1
+    disp(index);
+end
 
-    ```matlab
-    while index != 5
-      index = index + 1
-    end
-    ```
+% While
+while index != 5
+  index = index + 1;
+end
+```
 
-### Printing
+### Print TODO:
 
 - Display In Console
   - `disp(<something>)`
@@ -132,81 +172,54 @@ TODO:
 
 ### Constants
 
-- Pi: `pi`.
-- Euler's Number / Exponential: `exp(<power>)`.
+| Item | Syntax |
+| --- | --- |
+| pi | `pi` |
+| e | `exp(power)` |
 
 ### Complex Numbers
 
-- Declaration
+| Item | Syntax |
+| --- | --- |
+| Declaration | `variable = real + imaginary * 1i` |
+| Real Part | `real(variable)` |
+| Imaginary Part | `imag(variable)` |
+| Modulus | `abs(variable)` |
+| Phase Angle | `angle(variable)` |
 
-  ```matlab
-  % Matlab prefers "1i" to "i" or "j"
-  complex_num = 1 + 1i;
-  ```
-
-- Basic Operations
-
-  ```matlab
-  % Real Part
-  real(complex_num);
-
-  % Imaginary Part
-  imag(complex_num);
-
-  % Modulus
-  abs(complex_num);
-  ```
-
-- Arithmetic Operations
-
-  ```matlab
-  % Behaves as expected
-  c4 = c1 * (c2 + c3);
-  c6 = sqrt(c5);
-  c7 = exp(2 * 1i);
-  ```
+- Use `1i` instead `i` or `j` (otherwise will get warning).
+- Arithmetic operations work as usual on complex numbers.
 
 ### Trigonometry Functions
 
-- Trig
-  - Sine, Cosine, Tangent
-- Arc
-  - Arcsine, Arccosine, Arctangent
+| Items | Syntax |
+| --- | --- |
+| Sine | `sin(radian)` |
+| Cosine | `cos(radian)` |
+| Tangent | `tan(radian)` |
+| Arcsine | `asin(radian)` |
+| Arccosine | `acos(radian)` |
+| Arctangent | `atan(radian)` |
+| Hyperbolic Sine | `sinh(radian)` |
+| Hyperbolic Cosine | `cosh(radian)` |
+| Hyperbolic Tangent | `tanh(radian)` |
 
-## Matrices (Arrays)
+## Matrix/Array
 
 ### Declaration
 
-- Hard-code
-  - `<variable> = [<element1>, <element2>, ...]`
+| Item | Syntax |
+| --- | --- |
+| Declaration | `variable = [ r1c1, r1c2, ...; r2c1, r2c2, ...; ... ]` |
+| Linear Space | `linspace(start, end, number-of-points)` |
 
-    ```matlab
-    some_array = [1, 2, 3];
-    ```
+### Basic Operation
 
-- Linear Space
-  - `linspace(<start>, <end>, <number-of-points>)`
-
-    ```matlab
-    some_array = linspace(0, 4, 5);
-    ```
-
-### Operations
-
-- Accessing
-  - Get element: `<variable>(<row>, <column>)`
-  - Get row: `<variable>(<row>)`
-  - Get column (transpose than row): `<variable>'(<column>)`
-
-    ```matlab
-    row = matrix(1);
-    column = matrix'(1);
-    element = matrix(1, 1);
-    ```
-
-#### Basic Operations
-
-TODO:
+| Item | Syntax |
+| --- | --- |
+| Get Element | `variable(row, column)` |
+| Get Row | `variable(row)` |
+| Get Transpose |  `variable'` |
 
 ## Data Visualization
 
@@ -214,5 +227,7 @@ TODO:
 
 ## References
 
-- MATLAB Official Documentation ([https://uk.mathworks.com/help/matlab/index.html](https://uk.mathworks.com/help/matlab/index.html))
-- Imperial College Electrical & Electronics Engineering Department MATLAB Self-Revision Course ([https://www.imperial.ac.uk/electrical-engineering](https://www.imperial.ac.uk/electrical-engineering))
+- MATLAB Official Documentation
+  ([https://uk.mathworks.com/help/matlab/index.html](https://uk.mathworks.com/help/matlab/index.html))
+- Imperial College Electrical & Electronics Engineering Department MATLAB Self-Revision Course
+  ([https://www.imperial.ac.uk/electrical-engineering](https://www.imperial.ac.uk/electrical-engineering))
