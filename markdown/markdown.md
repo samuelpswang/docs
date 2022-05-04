@@ -13,7 +13,7 @@
 | --- | --- |
 | Where is markdown used? | Since markdown is a lightweight markup language, it is widely used in software developement (particularly in writing documentation). |
 | Why is markdown called markdown? | "Markdown" is a wordplay on "markup", which is basically saying it is a language that provides styling to text. |
-| What about using HTML in my markdown document? |  |
+| What about using HTML in my markdown document? | Yes, you can use HTML in your markdown and it will generally work, but pure markdown linters will throw warnings. |
 
 ## Basic Syntax
 
@@ -34,7 +34,7 @@
 | --- | --- | --- |
 | Bold | `**bolded-text**` | |
 | Italic | `*italicized-text*`| |
-| Code | \``code`\` | Use `\` for escape character. |
+| Code | `` `code` `` | Use ` `` ` for around code to escape ` ` `. |
 | Link | `[displayed-link-name](link-address)` | |
 | Image | `![alt-text](image-address)`| Internet URLs and relative file paths both work. |
 
@@ -75,7 +75,7 @@ I'm a paragraph. I am **bold**. I am *italicized*.
 | Task List | See Code Block 2. | |
 | Table | See Code Block 3. | |
 | Fenced Code Block | See Code Block 4. | |
-| Definition List | See Code Block 5. | Doesn't work in VSCode render. |
+| Definition List | See Code Block 5. | Don't work in VSCode render. |
 | Footnote | See Code Block 6. | |
 
 **Inline Elements**
@@ -83,10 +83,10 @@ I'm a paragraph. I am **bold**. I am *italicized*.
 | Item | Syntax | Remarks |
 | --- | --- | --- |
 | Strikethrough | `~~text~~` |  |
-| Highlight | `==text==` | Doesn't work in VSCode render. |
-| Subscript | `text^superscript^` | Doesn't work in VSCode render. |
-| Superscript | `text~subscript~` | Doesn't work in VSCode render. |
-| Emoji | `:emoji-code:` | Doesn't work in VSCode render. |
+| Highlight | `==text==` | Don't work in VSCode render. |
+| Subscript | `text^superscript^` | Don't work in VSCode render. |
+| Superscript | `text~subscript~` | Don't work in VSCode render. |
+| Emoji | `:emoji-code:` | Don't work in VSCode render. |
 
 **Note**
 
@@ -137,10 +137,17 @@ This is a line of text[^1].
 
 ## Github-Flavord Markdown
 
-TODO:
+**Shit**
+
+**Flow Diagram**
+
 
 ## References
 
-[1]: Markdownguide.org. 2022. Markdown Cheat Sheet | Markdown Guide. [online] Available at: <https://www.markdownguide.org/cheat-sheet/> [Accessed 4 May 2022].
+[1]: Docs.github.com. 2022. [online] Available at: <https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting> [Accessed 4 May 2022].
 
 [2]: Markdownmonster.west-wind.com. 2022. Escape Markdown Fenced Code Blocks - Markdown Monster Documentation. [online] Available at: <https://markdownmonster.west-wind.com/docs/_5eg1brc0z.htm> [Accessed 4 May 2022].
+
+[3]: Github.github.com. 2022. GitHub Flavored Markdown Spec. [online] Available at: <https://github.github.com/gfm/> [Accessed 4 May 2022].
+
+[4]: Markdownguide.org. 2022. Markdown Cheat Sheet | Markdown Guide. [online] Available at: <https://www.markdownguide.org/cheat-sheet/> [Accessed 4 May 2022].
