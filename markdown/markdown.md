@@ -1,5 +1,7 @@
 # Markdown Cheat Sheet
 
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
+
 - [Markdown Cheat Sheet](#markdown-cheat-sheet)
   - [FAQs](#faqs)
   - [Basic Syntax](#basic-syntax)
