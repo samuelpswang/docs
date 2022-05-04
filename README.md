@@ -1,6 +1,6 @@
-# Cheat Sheets (in Markdown)
+# Cheat Sheets
 
-- [Cheat Sheets (in Markdown)](#cheat-sheets-in-markdown)
+- [Cheat Sheets](#cheat-sheets)
   - [Introduction](#introduction)
   - [Sheets List](#sheets-list)
   - [Addendum](#addendum)
@@ -10,12 +10,12 @@
 ## Sheets List
 
 - Markup
-  - [2️⃣] LaTeX
-  - [3️⃣] LaTeX (EEE Packages)
-  - [1️⃣] Markdown
+  - [#1] LaTeX
+  - [#2] LaTeX (EEE Packages)
+  - [Markdown](./markdown/markdown.md)
 
 - Programming
-  - [🚧] [MATLAB](https://github.com/samuelpswang/cheat-sheets-in-markdown/blob/main/matlab/matlab.md)
+  - [🚧] [MATLAB](./matlab/matlab.md)
 
 ## Addendum
 
@@ -23,4 +23,4 @@
   | Symbol | Status |
   | --- | --- |
   | 🚧 | Work In Progress |
-  | 0️⃣ | On Hold #0 |
+  | #0 | On Hold #0 |
